@@ -1,0 +1,10 @@
+body{
+//background: url("{% static 'img/new-york2.jpg' %}") no-repeat center center fixed;
+background: grey;
+-webkit-background-size: cover;
+-moz-background-size: cover;
+-o-background-size: cover;
+background-size: cover;
+height:100%;
+margin:0;
+}
