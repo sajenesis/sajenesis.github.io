@@ -1,118 +1,125 @@
 <!doctype html>
-
 <html lang="en">
-    <head>
-        <title>Sajenesis</title>
-        <script src="https://code.jquery.com/jquery.min.js"></script>
-        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
-        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
-        <meta name='viewport' content='width=device-width, initial-scale=1.0'>
-		<meta charset="utf-8" />
-		<link rel="icon" href="">
-        <link rel="stylesheet" href="{% static 'css/style.css' %}" type='text/css'/>
-        <script src="js/main.js"></script>
-		<style>
-		</style>
-    </head>
-    <body>
-		<div class="body_wrap">
-			<div id="header">
-            <nav class="navbar navbar-inverse navbar-fixed-top">
-                <div class="container-fluid">
-                    <!-- Brand and toggle get grouped for better mobile display -->
-                    <div class="navbar-header">
-                        <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1"
-                            aria-expanded="false">
-                            <span class="sr-only">Toggle navigation</span>
-                            <span class="icon-bar"></span>
-                            <span class="icon-bar"></span>
-                            <span class="icon-bar"></span>
-                        </button>
-						<!--<a class="navbar-brand" href="/"><img style="max-width:35px;max-height:35px;padding-bottom:5px" src="{% static 'img/' %}"></a>
-		  				-->
-                    </div>
-                    <!-- Collect the nav links, forms, and other content for toggling -->
-                    <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
-                        <ul class="nav navbar-nav">
-                            <li class="dropdown">
-                                <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Sajenesis<span class="caret"></span></a>
-                                <ul class="dropdown-menu">
-                                    <li><a href="#">Projects</a></li>
-                                    <li><a href="#">Information</a></li>
-                                </ul>
-                            <li><a href="/">Board</a></li>
-
-                            </li>
-                        </ul>
-            <!--
-                        <form class="navbar-form navbar-right" role="search">
-                            <div class="form-group">
-                                <input type="text" class="form-control" placeholder="Search the site">
-                            </div>
-                            <button type="submit" class="btn btn-default">Submit</button>
-                        </form>
-            -->
-                        <ul class="nav navbar-nav navbar-right">
-            <!--
-                                    <li><a href="/accounts/profile/">Welcome</a></li>
-                                    <li><a href="/logout/">Logout</a></li>
-                                    <li><a href="/register/">Create an Account</a></li>
-            -->
-                                    <li><a href="/login/">Login</a></li>
-                            <li class="dropdown">
-                                <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Settings<span class="caret"></span></a>
-                                <ul class="dropdown-menu">
-                                    <li><a href="accounts/profile">Profile</a></li>
-                                    <li><a href="#">Account Profile</a></li>
-                                    <li><a href="#">Change Preferences</a></li>
-                                    <li><a href="#">Notifications</a></li>
-                                    <li role="separator" class="divider"></li>
-                                    <li><a href="#">Learn More </a></li>
-                                    <li><a href="#">Contact Information</a></li>
-                                </ul>
-                            </li>
-                        </ul>
-
-                    </div>
-                    <!-- /.navbar-collapse -->
+<head>
+<title>Sajenesis</title>
+<script src="https://code.jquery.com/jquery.min.js"></script>
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+<meta name='viewport' content='width=device-width, initial-scale=1.0'>
+<meta charset="utf-8" />
+<link rel="icon" href="">
+<link rel="stylesheet" href="css/style.css" type='text/css'/>
+</head>
+<body>
+<div class="body_wrap">
+    <div id="header">
+        <nav class="navbar navbar-inverse navbar-fixed-top">
+            <div class="container-fluid">
+                <!-- Brand and toggle get grouped for better mobile display -->
+                <div class="navbar-header">
+                    <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1"
+                        aria-expanded="false">
+                        <span class="sr-only">Toggle navigation</span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                    </button>
+                    <!--<a class="navbar-brand" href="/"><img style="max-width:35px;max-height:35px;padding-bottom:5px" src="{% static 'img/' %}"></a>
+        -->
                 </div>
+                <!-- Collect the nav links, forms, and other content for toggling -->
+                <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+                    <ul class="nav navbar-nav">
+                        <li class="dropdown">
+                        <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Sajenesis<span class="caret"></span></a>
+                        <ul class="dropdown-menu">
+                            <li><a href="#">Info</a></li>
+                        </ul>
+                        <li><a href="#"></a></li>
 
-                <!-- /.container-fluid -->
-            </nav>
-            <!-- /header -->
-			</div>
+                        </li>
+                    </ul>
+                    <!--
+        <form class="navbar-form navbar-right" role="search">
+        <div class="form-group">
+        <input type="text" class="form-control" placeholder="Search the site">
+      </div>
+      <button type="submit" class="btn btn-default">Submit</button>
+    </form>
+  -->
+                    <ul class="nav navbar-nav navbar-right">
+                        <!--
+    <li><a href="/accounts/profile/">Welcome</a></li>
+    <li><a href="/logout/">Logout</a></li>
+    <li><a href="/register/">Create an Account</a></li>
+  -->
+                    </ul>
 
-        <div id='page-message'>
-          <div class="slideshow-container">
+                </div>
+                <!-- /.navbar-collapse -->
+            </div>
 
-          <div class="mySlides fade">
-            <img src="img/new-york-1" style="width:100%">
-          </div>
+            <!-- /.container-fluid -->
+        </nav>
+        <!-- /header -->
+    </div>
 
-          <div class="mySlides fade">
-            <img src="img/new-york-2.jpg" style="width:100%">
-          </div>
 
-          <div class="mySlides fade">
-            <img src="img/new-york-3.jpg" style="width:100%">
-          </div>
-          
-          </div>
-            <!--
-            -->
+    <div id='page-message'>
 
-            <!-- page content -->
+        <div class="slideshow-container">
+
+            <div class="mySlides fade">
+                <img src="img/new-york.jpg" style="width:100%;">
+                <h1 class="slide_title">Inspiration</h1>
+                <p class="slide_text"></p>
+            </div>
+
+            <div class="mySlides fade">
+                <img src="img/superbike.jpg" style="width:100%;">
+                <h1 class="slide_title">Design</h1>
+                <p class="slide_text"></p>
+            </div>
+
+            <div class="mySlides fade">
+                <img src="img/coding.jpg" style="width:100%;">
+                <h1 class="slide_title">Art</h1>
+                <p class="slide_text"></p>
+            </div>
+
+            <div class="mySlides fade">
+                <img src="img/engine.jpg" style="width:100%;">
+                <h1 class="slide_title">Performance</h1>
+                <p class="slide_text"></p>
+            </div>
+
+        </div>
+        <br>
+        <script>
+var slideIndex = 0;
+showSlides();
+
+function showSlides() {
+    var i;
+    var slides = document.getElementsByClassName("mySlides");
+    for (i = 0; i < slides.length; i++) {
+        slides[i].style.display = "none";
+    }
+    slideIndex++;
+    if (slideIndex> slides.length) {slideIndex = 1}
+    slides[slideIndex-1].style.display = "block";
+    setTimeout(showSlides, 4000); // Change image every 2 seconds
+}
+        </script>
+        <!--
+  -->
+
+        <!-- page content -->
 
         <footer class="footer">
-            <!--
-			<a class="logo" href="/"><img style="width:5%;max-width:35px;max-height:35px;" src="{% static 'img/' %}"></a>
-            -->
-            <a>Sajenesis</a> | <a>Terms of Service</a> | <a>Privacy Policy</a> | <a>Contact Us</a>
+            <a>Sajenesis</a> | <a>Contact</a>
         </footer>
-        </div>
-        </div>
-    </body>
-
-
-
+    </div>
+</div>
+</body>
 </html>
