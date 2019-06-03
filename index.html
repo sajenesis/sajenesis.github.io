@@ -1,125 +1,51 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
 <head>
-<title>Sajenesis</title>
-<script src="https://code.jquery.com/jquery.min.js"></script>
-<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
-<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
-<meta name='viewport' content='width=device-width, initial-scale=1.0'>
-<meta charset="utf-8" />
-<link rel="icon" href="">
-<link rel="stylesheet" href="css/style.css" type='text/css'/>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <link rel="stylesheet" href="main.css">
 </head>
 <body>
-<div class="body_wrap">
-    <div id="header">
-        <nav class="navbar navbar-inverse navbar-fixed-top">
-            <div class="container-fluid">
-                <!-- Brand and toggle get grouped for better mobile display -->
-                <div class="navbar-header">
-                    <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1"
-                        aria-expanded="false">
-                        <span class="sr-only">Toggle navigation</span>
-                        <span class="icon-bar"></span>
-                        <span class="icon-bar"></span>
-                        <span class="icon-bar"></span>
-                    </button>
-                    <!--<a class="navbar-brand" href="/"><img style="max-width:35px;max-height:35px;padding-bottom:5px" src="{% static 'img/' %}"></a>
-        -->
-                </div>
-                <!-- Collect the nav links, forms, and other content for toggling -->
-                <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
-                    <ul class="nav navbar-nav">
-                        <li class="dropdown">
-                        <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Sajenesis<span class="caret"></span></a>
-                        <ul class="dropdown-menu">
-                            <li><a href="#">Info</a></li>
-                        </ul>
-                        <li><a href="#"></a></li>
-
-                        </li>
-                    </ul>
-                    <!--
-        <form class="navbar-form navbar-right" role="search">
-        <div class="form-group">
-        <input type="text" class="form-control" placeholder="Search the site">
-      </div>
-      <button type="submit" class="btn btn-default">Submit</button>
-    </form>
-  -->
-                    <ul class="nav navbar-nav navbar-right">
-                        <!--
-    <li><a href="/accounts/profile/">Welcome</a></li>
-    <li><a href="/logout/">Logout</a></li>
-    <li><a href="/register/">Create an Account</a></li>
-  -->
-                    </ul>
-
-                </div>
-                <!-- /.navbar-collapse -->
-            </div>
-
-            <!-- /.container-fluid -->
-        </nav>
-        <!-- /header -->
+    <div id="nav">
+        <a href="">SAJENESIS</a>
     </div>
-
-
-    <div id='page-message'>
-
-        <div class="slideshow-container">
-
-            <div class="mySlides fade">
-                <img src="img/new-york.jpg" style="width:100%;">
-                <h1 class="slide_title">Inspiration</h1>
-                <p class="slide_text"></p>
-            </div>
-
-            <div class="mySlides fade">
-                <img src="img/superbike.jpg" style="width:100%;">
-                <h1 class="slide_title">Design</h1>
-                <p class="slide_text"></p>
-            </div>
-
-            <div class="mySlides fade">
-                <img src="img/coding.jpg" style="width:100%;">
-                <h1 class="slide_title">Art</h1>
-                <p class="slide_text"></p>
-            </div>
-
-            <div class="mySlides fade">
-                <img src="img/engine.jpg" style="width:100%;">
-                <h1 class="slide_title">Performance</h1>
-                <p class="slide_text"></p>
-            </div>
-
-        </div>
-        <br>
-        <script>
-var slideIndex = 0;
-showSlides();
-
-function showSlides() {
-    var i;
-    var slides = document.getElementsByClassName("mySlides");
-    for (i = 0; i < slides.length; i++) {
-        slides[i].style.display = "none";
-    }
-    slideIndex++;
-    if (slideIndex> slides.length) {slideIndex = 1}
-    slides[slideIndex-1].style.display = "block";
-    setTimeout(showSlides, 4000); // Change image every 2 seconds
-}
-        </script>
         <!--
-  -->
-
-        <!-- page content -->
-
-        <footer class="footer">
-            <a>Sajenesis</a> | <a>Contact</a>
-        </footer>
+        -->
+    <div class="card">
+        <div class="text-box">
+            <h1>About Me</h1>
+            <h3>Background</h3>
+            <p>My name is Sajeel Ahmad. I am a Software Engineer with a background in full stack web development as well as data modeling. I enjoy problem solving and thinking outside the box to engineer creative solutions to technical challenges. </p>
+            <h3>Specialties</h3>
+            <p>I focus on programming paradigms including object-oriented design and functional programming. My favorite programming language is C++, but I also have a real soft spot for Python development. I also love programming in Java whenever I am trying out something new in Android. C# is another of the main languages I use. I use it for game development in Unity or whenever I want to build an application for Windows with the .NET framework. </p>
+            <h3>Interests</h3>
+            <p>I have many interests in the world of technology. One of my favorite topics is machine learning and artificial inteligence. Machine learning is the future of every industry. I also find the financial tech industry facsinating. It is another inevitable focus of tech development since every company will always require a financial department. I also enjoy developing both 3D and terminal games in my spare time.</p>
+        </div>
     </div>
-</div>
+    <div class="card">
+        <div class="text-box">
+            <h1>Projects</h1>
+            <h3>Machine Learning Aglorithm Testing Framework</h3>
+            <p>Structured application for testing and viewing simulation results based on variable machine learning Plugins. Used in measuring the efficiency of machine learning algorithms.</p>
+            <h3>Financial Data Modeling Software</h3>
+            <p>Algorithm for analyzing historical data to predict trends in financial markets.</p>
+        </div>
+    </div>
+    <div class="card">
+        <div class="text-box">
+            <h1>Contact Information</h1>
+            <h3>Email</h3>
+            <p>eyaansa@gmail.com</p>
+            <h3>Linkedin</h3>
+            <p><a href="http://www.linkedin.com/in/sajeel-ahmad-782aa3105/">sajeel-ahmad-782aa3105/</a></p>
+            <h3>Github</h3>
+            <p><a href="http://www.github.com/sajenesis">github.com/sajenesis</a></p>
+            <h3>Stack Overflow</h3>
+            <p><a href="https://stackoverflow.com/users/11442299/jenesis">Sajenesis</a></p>
+        </div>
+    </div>
+    
 </body>
 </html>
