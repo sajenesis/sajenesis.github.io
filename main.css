@@ -1,0 +1,49 @@
+body{
+    margin: 0;
+    font-family: Verdana, Geneva, sans-serif;
+    color: grey;
+
+    background-image: url("curvedlines.png");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+}
+a {
+    text-decoration: none;
+    color: inherit;
+}
+#nav{
+    height:100px;
+    //background: grey;
+    color: grey;
+    font-size: 50px;
+    text-align: right;
+    padding: 0px 10px;
+    //box-shadow: 0px 0px 10px #888888;
+}
+.card {
+    background: #fff;
+    margin: auto;
+    margin-top: 25px;
+    margin-bottom: 25px;
+    //padding: 10px;
+    width: 100%;
+    //height: 300px;
+    max-width: 700px;
+    box-shadow: 0px 0px 10px #888888;
+    opacity: 0.90;
+    animation: fadeIn 2s;
+}
+.text-box{
+    padding: 10px;
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 0.9;
+    }
+}
