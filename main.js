@@ -14,7 +14,7 @@ let display_config = {
         },
         'Quick Info': {
             content_title: 'Quick Info',
-            content_data: '<h3>Education</h3><p>Rutgers University - Software Engineering 2017</p><h3>Experience</h3><p>Netscout Systems, Start Up Chewhoo, Comcast, NRG Energy</p><h3>Skills</h3><p>Object Oriented Design, Agile/Scrum, REST, MVC, Parallel Programming, Distributed Systems, Test Driven Development, API/Middleware Design, Database Automation, Data Processing, Logging, Integration/Automation, Unit Testing, Continuous Integration Continuous Delivery</p><h3>OS/Dev Tools</h3><p>Linux, Android, Nodejs, Git/Github, Nginx, CI/CD, Jenkins, Postman</p><h3>Cloud</h3><p>AWS: Lambda, S3, Dynamodb, EC2, Cloudwatch, RDS, VPC, API Gateway, SQS. Azure: Pipelines (CICD)</p><h3>Frameworks</h3><p>Django, React, Serverless Framework</p><h3>Databases</h3><p>SQL: MySQL, Oracle, Postgres, MS SQL Server. NoSQL: Dynamodb, Mongodb</p><h3>Programming Languages</h3><p>Python, C, C++, C#, Java,Javascript</p>'
+            content_data: '<h3>Education</h3><p>Rutgers University - Software Engineering 2017</p><br><h3>Experience</h3><p>NRG Energy, Comcast, Start Up Company Chewhoo, Netscout Systems</p><br><h3>Skills</h3><p>Agile/Scrum, REST, MVC, Parallel Programming, Distributed Systems, Test Driven Development, API/Middleware Design, Database Automation, Data Processing, Logging, Integration/Automation, Continuous Integration Continuous Delivery</p><br><h3>OS/Dev Tools</h3><p>Linux, Android, Nodejs, Git/Github, Nginx, CI/CD, Jenkins, Postman</p><br><h3>Cloud</h3><p>AWS: Lambda, S3, Dynamodb, EC2, Cloudwatch, RDS, VPC, API Gateway, SQS. Azure: Pipelines (CICD)</p><br><h3>Frameworks</h3><p>Django, React, Serverless Framework</p><br><h3>Databases</h3><p>SQL: MySQL, Oracle, Postgres, MS SQL Server. NoSQL: Dynamodb, Mongodb</p><br><h3>Programming Languages</h3><p>Python, C, C++, C#, Java,Javascript</p>'
         },
         'Projects': {
             content_title: 'Projects',
@@ -22,7 +22,7 @@ let display_config = {
         },
         'Contact': {
             content_title: 'Contact',
-            content_data: '<h3>Email: eyaansa@gmail.com</h3><h3>Linkedin: sajeel-ahmad-782aa3105</h3><h3>Github: github.sajenesis.io</h3>'
+            content_data: '<h3>Email: eyaansa@gmail.com</h3><br><h3>Linkedin: sajeel-ahmad-782aa3105</h3><br><h3>Github: github.sajenesis.io</h3>'
         }
     }
 };
