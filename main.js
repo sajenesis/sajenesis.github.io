@@ -5,7 +5,7 @@ let display_config = {
     default_section: {
         id: 'default_section',
         content_title: 'Welcome',
-        content_data: 'Please select a section from the panel on the left'
+        content_data: 'Please select a section from the Sections panel'
     },
     sections: {
         'About': {
@@ -34,7 +34,7 @@ let display_config = {
                 + '<h3>Databases</h3>'
                 + '<p>SQL: MySQL, Oracle, Postgres, MS SQL Server. NoSQL: Dynamodb, Mongodb</p><br>'
                 + '<h3>Programming Languages</h3>'
-                + '<p>Python, C, C++, C#, Java,Javascript</p>'
+                + '<p>Python, C, C++, C#, Java, Javascript</p>'
             )
         },
         'Projects': {
