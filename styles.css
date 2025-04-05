@@ -340,17 +340,6 @@ a {
         visibility: hidden;
         height: 0;
     }
-    #mobile_spacer {
-        visibility: visible;
-        opacity: 1;
-        background-color: black;
-        height: 100%;
-        width: 1000px;
-        position: fixed;
-        left: 800px;
-        top: 0;
-        z-index: 1;
-    }
     #application_container {
         width: 100%;
     }
@@ -372,18 +361,15 @@ a {
         margin-top: 450px;
     }
     #background_svg_container {
-        width: 350%;
+        background-size: 200%;
+        width: 100%;
+        animation: none;
+        transform: translate(0, 200px)
     }
     #background_svg_container_foreground {
-        width: 350%;
-    }
-}
-
-@media only screen and (max-width: 300px){
-    #background_svg_container {
-        visibility: hidden;
-    }
-    #background_svg_container_foreground {
-        visibility: hidden;
+        background-size: 200%;
+        width: 100%;
+        animation: none;
+        transform: translate(0, 500px)
     }
 }
