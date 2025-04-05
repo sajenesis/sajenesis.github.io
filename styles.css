@@ -352,18 +352,18 @@ a {
         z-index: 1;
     }
     #application_container {
-        width: 800px;
+        width: 100%;
     }
     #page_container {
-        width: 800px;
+        width: 100%;
         animation-timeline: none;
     }
     #panel_container {
         float: left;
-        width: 50%;
+        width: 80%;
     }
     #panel_container:hover {
-        width: 60%;
+        width: 80%;
     }
     #sections_container {
         width: 80%;
@@ -372,11 +372,18 @@ a {
         margin-top: 450px;
     }
     #background_svg_container {
-        width: 200%;
-        background-size: 200%;
+        width: 350%;
     }
     #background_svg_container_foreground {
-        width: 200%;
-        background-size: 200%;
+        width: 350%;
+    }
+}
+
+@media only screen and (max-width: 300px){
+    #background_svg_container {
+        visibility: hidden;
+    }
+    #background_svg_container_foreground {
+        visibility: hidden;
     }
 }
