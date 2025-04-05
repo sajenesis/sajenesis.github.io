@@ -62,6 +62,11 @@ class DisplayInterface {
         console.log('displaying main section');
         const application_container = document.getElementById('application_container');
 
+        // Mobile Spacer
+        const mobile_spacer = document.createElement('div');
+        mobile_spacer.id = 'mobile_spacer';
+        application_container.appendChild(mobile_spacer);
+
         // Create Section Containers 
         const header = document.createElement('div');
         header.id = 'header';
