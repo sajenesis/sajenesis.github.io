@@ -39,17 +39,17 @@ a {
     animation: 10s alternating_shadow_warm infinite linear;
 }
 
+#mobile_spacer {
+    visibility: hidden;
+    height: 0;
+    width: 0;
+}
+
 #header {
     margin: 0;
     padding: 0;
     height: 200px;
     width: 100%;
-}
-
-#background_svg {
-    transform: translate(-1000px);
-    animation: 10s translate_svg infinte linear;
-    z-index: 0;
 }
 
 #background_svg_container {
@@ -340,15 +340,22 @@ a {
         visibility: hidden;
         height: 0;
     }
-    #background_svg_container {
-        width: 200%;
+    #mobile_spacer {
+        visibility: visible;
+        opacity: 1;
+        background-color: black;
+        height: 100%;
+        width: 1000px;
+        position: fixed;
+        left: 800px;
+        top: 0;
+        z-index: 1;
     }
-    #background_svg_container_foreground {
-        width: 200%;
-        z-index: 0;
+    #application_container {
+        width: 800px;
     }
     #page_container {
-        width: 100%;
+        width: 800px;
         animation-timeline: none;
     }
     #panel_container {
@@ -363,5 +370,13 @@ a {
         float: left;
         left: 0;
         margin-top: 450px;
+    }
+    #background_svg_container {
+        width: 200%;
+        background-size: 200%;
+    }
+    #background_svg_container_foreground {
+        width: 200%;
+        background-size: 200%;
     }
 }
